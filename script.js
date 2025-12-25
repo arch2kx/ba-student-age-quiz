@@ -271,10 +271,10 @@ function checkAnswer(userAge, correctAge, buttonElement) {
 
     if (isCorrect) {
         feedback.className = 'feedback correct';
-        feedbackText.innerHTML = `<strong>✓ Correct!</strong><br>${quizQuestions[currentQuestionIndex].Name} is ${correctAge} years old.`;
+        feedbackText.innerHTML = `<strong>✅ Correct!</strong><br>${quizQuestions[currentQuestionIndex].Name} is ${correctAge} years old.`;
     } else {
         feedback.className = 'feedback incorrect';
-        feedbackText.innerHTML = `<strong>✗ Incorrect!</strong><br>You guessed ${userAge}, but ${quizQuestions[currentQuestionIndex].Name} is ${correctAge} years old.`;
+        feedbackText.innerHTML = `<strong>❌ Incorrect!</strong><br>You guessed ${userAge}, but ${quizQuestions[currentQuestionIndex].Name} is ${correctAge} years old.`;
     }
 
     feedback.classList.remove('hidden');
