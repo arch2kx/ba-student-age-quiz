@@ -1,4 +1,4 @@
-[<img src="images/ba_student_age_quiz_logo.png" alt="Blue Archive Student Age Quiz" width="425px">]
+<img src="images/ba_student_age_quiz_logo.png" alt="Blue Archive Student Age Quiz" width="425px">
 
 A web-based quiz game that tests your knowledge of Blue Archive student ages using data from SchaleDB.
 
