@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Archive Student Age Quiz</title>
+    <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <span class="theme-icon">🌙</span>
+    </button>
+
+    <div class="container">
+        <h1>Blue Archive Student Age Quiz</h1>
+
+        <div id="setup-screen" class="screen active">
+            <h2>Quiz Settings</h2>
+
+            <div class="setting-group">
+                <label for="num-questions">Number of Questions:</label>
+                <select id="num-questions">
+                    <option value="5">5</option>
+                    <option value="10" selected>10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                </select>
+            </div>
+
+            <div class="setting-group">
+                <label for="answer-type">Answer Type:</label>
+                <select id="answer-type">
+                    <option value="multiple-choice">Multiple Choice</option>
+                    <option value="type-in">Type In Number</option>
+                </select>
+            </div>
+
+            <div class="setting-group">
+                <label for="student-order">Student Selection:</label>
+                <select id="student-order">
+                    <option value="random">Random</option>
+                    <option value="popular">Popular First</option>
+                    <option value="unpopular">Least Popular First</option>
+                </select>
+            </div>
+
+            <button id="start-btn" class="btn-primary">Start Quiz</button>
+            <div id="loading" class="loading hidden">Loading student data...</div>
+            <div id="error-message" class="error hidden"></div>
+        </div>
+
+        <div id="quiz-screen" class="screen">
+            <div class="quiz-header">
+                <div class="progress">
+                    Question <span id="current-question">1</span> of <span id="total-questions">10</span>
+                </div>
+                <div class="score">
+                    Score: <span id="current-score">0</span>
+                </div>
+            </div>
+
+            <div class="student-display">
+                <img id="student-image" src="" alt="Student" class="student-image">
+                <h2 id="student-name"></h2>
+            </div>
+
+            <div class="question">
+                <h3>How old is this student?</h3>
+            </div>
+
+            <div id="answer-container" class="answer-container">
+                <!-- Will be populated dynamically -->
+            </div>
+
+            <div id="feedback" class="feedback hidden">
+                <p id="feedback-text"></p>
+                <button id="next-btn" class="btn-primary">Next Question</button>
+            </div>
+        </div>
+
+        <div id="results-screen" class="screen">
+            <h2>Quiz Complete!</h2>
+            <div class="final-score">
+                <p>Your Score:</p>
+                <p class="score-large"><span id="final-score">0</span> / <span id="final-total">10</span></p>
+                <p class="percentage"><span id="percentage">0</span>%</p>
+            </div>
+            <div id="results-details" class="results-details">
+                <!-- Will be populated with question results -->
+            </div>
+            <button id="restart-btn" class="btn-primary">Take Another Quiz</button>
+        </div>
+    </div>
+
+    <!-- Attribution Footer -->
+    <footer class="attribution-footer">
+        <div class="attribution-content">
+            <p class="made-by">Made by <strong>arch2kx</strong></p>
+            <div class="social-links">
+                <a href="https://github.com/arch2kx" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                    <span class="social-text">GitHub</span>
+                </a>
+                <!-- Add more links here later (Ko-fi, etc.) -->
+                <!-- Example:
+                <a href="YOUR_KOFI_LINK" target="_blank" rel="noopener noreferrer" class="social-link" title="Ko-fi">
+                    <span class="social-icon">☕</span>
+                    <span class="social-text">Ko-fi</span>
+                </a>
+                -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
