@@ -1,4 +1,4 @@
-# Blue Archive Student Age Quiz
+![Blue Archive Student Age Quiz](images/ba_student_age_quiz_logo.png)
 
 A web-based quiz game that tests your knowledge of Blue Archive student ages using data from SchaleDB.
 
