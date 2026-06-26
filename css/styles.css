@@ -15,7 +15,7 @@ body {
 :root {
     --bg-primary: #f3f4f6;
     --bg-secondary: white;
-    --bg-tertiary: #f9f9f9;
+    --bg-tertiary: #e6e6e6;
     --text-primary: #333;
     --text-secondary: #555;
     --text-tertiary: #666;
@@ -169,7 +169,7 @@ h3 {
     border: none;
     border-radius: 5px;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
     margin-top: 20px;
     transition: background-color 0.3s;
@@ -254,8 +254,8 @@ h3 {
 
 .answer-container.type-in {
     font-family: "Noto Sans", sans-serif;
-    max-width: 300px;
-    margin: 0 auto;
+    max-width: 500px;
+    margin: 0 auto 20px;
 }
 
 .answer-btn {
@@ -297,12 +297,14 @@ h3 {
 
 .type-in-group {
     display: flex;
+  justify-content: center;
+
     gap: 10px;
 }
 
-.type    font-family: "Noto Sans", sans-serif;
--in-input {
+.type-in-input {
     flex: 1;
+    font-family: "Noto Sans", sans-serif;
     padding: 15px;
     font-size: 18px;
     border: 2px solid var(--border-color);
@@ -683,8 +685,7 @@ h3 {
 .timer-options {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .timer-option {
